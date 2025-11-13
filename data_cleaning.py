@@ -47,6 +47,6 @@ for col in ['scheduledday', 'appointmentday']:
     if col in df.columns:
         df[col] = pd.to_datetime(df[col], format="%d-%m-%Y", errors='coerce')
 
-# 8️⃣ Save the cleaned dataset
+# 8️) Save the cleaned dataset
 df.to_csv("Cleaned_KaggleV2.csv", index=False)
-print("✅ Data cleaning complete. Cleaned file saved as 'Cleaned_KaggleV2.csv'.")
+print(" Data cleaning complete. Cleaned file saved as 'Cleaned_KaggleV2.csv'.")
